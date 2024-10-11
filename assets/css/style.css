@@ -1,0 +1,74 @@
+.font-poppins {
+    font-family: "Poppins", sans-serif !important;
+    font-style: normal;
+}
+
+.py-6 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+#hero {
+    background-image: url("/assets/img/Banner.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.glass {
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.white-placeholder::placeholder {
+    color: white;
+}
+
+.tv-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-sizing {
+    width: 12rem;
+    height: 16rem;
+    object-fit: cover;
+}
+
+.fs-7 {
+    font-size: 0.85rem !important;
+}
+
+.fs-8 {
+    font-size: 0.65rem !important;
+}
+
+.card:hover>img {
+    opacity: 0.5;
+}
+
+.card img {
+    transition: opacity ease-out .3s;
+}
+
+.custom-bg-grey {
+    background-color: #1D1D1D !important;
+}
+
+.card-info-bg {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 24%, rgba(0, 0, 0, 0.4) 62%, rgba(0, 0, 0, 0.2) 77%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-dark-gray {
+    background-color: #171717!important;
+}
+
+.footer-bg {
+    background-color: #1F1F1F!important;
+}
