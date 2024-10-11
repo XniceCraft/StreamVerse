@@ -13,15 +13,20 @@
     padding-right: 6rem;
 }
 
-#hero {
+.bg-banner {
     background-image: url("/assets/img/Banner.png") !important;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .glass {
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.dark-glass {
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0, 10, 0.4) !important;
 }
 
 .white-placeholder::placeholder {
@@ -66,9 +71,13 @@
 }
 
 .bg-dark-gray {
-    background-color: #171717!important;
+    background-color: #171717 !important;
 }
 
 .footer-bg {
-    background-color: #1F1F1F!important;
+    background-color: #1F1F1F !important;
+}
+
+.form-max-width {
+    max-width: 35rem;
 }
