@@ -14,7 +14,7 @@
 }
 
 .bg-banner {
-    background-image: url("/assets/img/Banner.png") !important;
+    background-image: url("../img/Banner.png") !important;
     background-position: center;
     background-repeat: no-repeat;
 }

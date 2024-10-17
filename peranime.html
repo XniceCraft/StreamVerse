@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/Logo-128px.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>StreamVerse</title>
+</head>
+
+<body class="h-full font-poppins bg-dark-gray">
+    <div class="flex h-full w-100">
+        <div class="w-auto p-8 bg-sidebar flex flex-col">
+            <div class="flex justify-center gap-3 mb-8">
+                <img src="assets/img/Logo-128px.png" width="20" height="20">
+                <p class="text-white font-medium">StreamVerse</p>
+            </div>
+            <div class="mb-8">
+                <h6 class="mb-2 text-xs font-bold text-sidebar">MENU</h6>
+                <ul class="d-flex flex-column font-medium">
+                    <li class="mb-2 text-sidebar">
+                        <a href="#" class="py-1"><i class="bi bi-house-fill pe-3"></i>
+                            Home</a>
+                    </li>
+                    <li class="mb-2 text-sidebar">
+                        <a href="#" class="py-1"><i class="bi bi-tv-fill pe-3"></i>
+                            TV</a>
+                    </li>
+                    <li class="mb-2 text-sidebar">
+                        <a href="#" class="py-1"><i class="bi bi-film pe-3"></i>
+                            Film</a>
+                    </li>
+                    <li class="mb-2 text-white">
+                        <a href="#" class="py-1"><span class="pe-3">
+                                <svg class="inline-block" fill="currentColor" width="16" height="16"
+                                    viewBox="0 0 96 96">
+                                    <path fill-rule="evenodd"
+                                        d="M38.892 14.296C26.973 19.323 15.061 32.693 15.01 41.102c-.009 1.359-2.437 8.367-13.59 39.218L.039 84.141l27.731-.321c31.091-.359 32.628-.667 41.006-8.237 18.829-17.01 3.415-50.678-20.822-45.48-20.01 4.292-21.144 34.431-1.379 36.658 12.603 1.421 18.192-11.422 8.707-20.006-1.841-1.666-2.037-1.62-4.623 1.079-2.699 2.817-2.699 2.82-.68 4.647 4.522 4.092 1.159 8.906-4.439 6.355-6.306-2.873-7.474-12.102-2.199-17.377 13.386-13.386 34.151 8.644 23.31 24.731-16.699 24.779-55.114-1.28-42.293-28.69 8.743-18.692 31.564-23.429 50.15-10.41l5.702 3.995 7.395-5.566c8.152-6.136 8.232-6.278 5.458-9.658-2.098-2.557-1.74-2.656-8.938 2.474l-3.978 2.835-8.663-4.293c-11.285-5.592-23.213-6.537-32.592-2.581M16 62.281c0 .371-1.105 3.609-2.455 7.196L11.09 76h15.259l-2.071-2.25c-1.138-1.237-3.467-4.476-5.174-7.196S16 61.911 16 62.281" />
+                                </svg></span>
+                            Anime</a>
+                    </li>
+                    <li class="mb-2 text-sidebar">
+                        <a href="#" class="py-1"><i class="bi bi-music-note-beamed pe-3"></i>
+                            Musik</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <h6 class="mb-2 text-xs font-bold text-sidebar">PUSTAKA</h6>
+                <ul class="d-flex flex-column font-medium">
+                    <li class="mb-2 text-sidebar">
+                        <a href="#" class="py-1"><i class="bi bi-clock-history pe-3"></i>
+                            Riwayat</a>
+                    </li>
+                    <li class="mb-2 text-sidebar">
+                        <a href="#" class="py-1"><i class="bi bi-heart-fill pe-3"></i>
+                            Disukai</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="py-1 text-sidebar font-medium mt-auto"><i class="bi bi-box-arrow-right pe-3"></i></i>
+                Keluar</a>
+        </div>
+        <div class="flex-1 overflow-y-auto">
+            <nav class="flex bg-sidebar p-6 justify-between">
+                <div class="flex items-center gap-4 ">
+                    <a href="/anime" class="text-white text-lg p-1 rounded-full"><i class="bi bi-chevron-left"></i></a>
+                    <form action="/search">
+                        <input type="text"
+                            class="rounded-3xl footer-bg border-none text-white placeholder-white text-sm ps-6 font-regular"
+                            placeholder="Cari sesuatu">
+                    </form>
+                </div>
+                <div class="flex items-center gap-8">
+                    <button class="text-white text-lg"><i class="bi bi-bell"></i></button>
+                    <button type="button"
+                        class="footer-bg rounded-full focus:ring-4 focus:ring-gray-300 text-white text-lg w-8 h-8"
+                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                        data-dropdown-placement="bottom">
+                        <span class="sr-only">Open user menu</span>
+                        <i class="bi bi-person-fill"></i>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div class="z-50 hidden my-4 me-10 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+                        id="user-dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+                            <span
+                                class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+                        </div>
+                        <ul class="py-2" aria-labelledby="user-menu-button">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+            <div class="w-100 p-6 text-white">
+                <div class="flex gap-6 h-96 mb-8">
+                    <iframe class="flex-1 rounded-xl"
+                        src="https://www.blogger.com/video.g?token=AD6v5dxT1EU-_mF7AUKc6hUuqlUGARB8TP8iSlUuayfYiOeWfp8wWI0NzVeltQNRvFJqAr15yJXisaymk4XRWT5oTa_5oCMztUjkxHCyred-aCWcGXzIG7ggV8wR2mdS0v-78DSSHVQ"></iframe>
+                    <div class="flex flex-col gap-4 pe-44 overflow-y-auto">
+                        <h3 class="font-semibold text-xl">Daftar Episode</h3>
+                        <a href="#" class="flex gap-6 items-center">
+                            <img src="assets/img/animes/Dr Stone Thumbnail.png">
+                            <div class="flex flex-col">
+                                <h6 class="font-semibold text-base">Episode 1</h6>
+                                <p class="text-xs font-thin">1 Jan 1980</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-6 items-center">
+                            <img src="assets/img/animes/Dr Stone Thumbnail.png">
+                            <div class="flex flex-col">
+                                <h6 class="font-semibold text-base">Episode 2</h6>
+                                <p class="text-xs font-thin">1 Jan 1980</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-6 items-center">
+                            <img src="assets/img/animes/Dr Stone Thumbnail.png">
+                            <div class="flex flex-col">
+                                <h6 class="font-semibold text-base">Episode 3</h6>
+                                <p class="text-xs font-thin">1 Jan 1980</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-6 items-center">
+                            <img src="assets/img/animes/Dr Stone Thumbnail.png">
+                            <div class="flex flex-col">
+                                <h6 class="font-semibold text-base">Episode 4</h6>
+                                <p class="text-xs font-thin">1 Jan 1980</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-6 items-center">
+                            <img src="assets/img/animes/Dr Stone Thumbnail.png">
+                            <div class="flex flex-col">
+                                <h6 class="font-semibold text-base">Episode 5</h6>
+                                <p class="text-xs font-thin">1 Jan 1980</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-6 items-center">
+                            <img src="assets/img/animes/Dr Stone Thumbnail.png">
+                            <div class="flex flex-col">
+                                <h6 class="font-semibold text-base">Episode 6</h6>
+                                <p class="text-xs font-thin">1 Jan 1980</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-6 items-center">
+                            <img src="assets/img/animes/Dr Stone Thumbnail.png">
+                            <div class="flex flex-col">
+                                <h6 class="font-semibold text-base">Episode 7</h6>
+                                <p class="text-xs font-thin">1 Jan 1980</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <section class="flex p-8 gap-6 glass rounded-xl">
+                    <img src="assets/img/animes/Dr Stone Cover.jpg" class="rounded-xl">
+                    <section>
+                        <div class="flex gap-4 mb-2">
+                            <a href="#" class="py-2 px-5 rounded-full text-black bg-white text-sm font-medium">
+                                Adventure
+                            </a>
+                            <a href="#" class="py-2 px-5 rounded-full text-black bg-white text-sm font-medium">
+                                Sci-Fi
+                            </a>
+                            <a href="#" class="py-2 px-5 rounded-full text-black bg-white text-sm font-medium">
+                                Comedy
+                            </a>
+                        </div>
+                        <h1 class="font-medium text-3xl mb-2">Dr. Stone Season 3</h1>
+                        <table class="table-auto mb-2">
+                            <tbody>
+                              <tr>
+                                <td class="text-xs">Japanese</td>
+                                <td class="font-thin text-xs">ドクターストーン</td>
+                              </tr>
+                              <tr>
+                                <td class="text-xs">Aired</td>
+                                <td class="font-thin text-xs">Jul 5, 2019 to Dec 13, 2019</td>
+                              </tr>
+                              <tr>
+                                <td class="text-xs">Rating</td>
+                                <td class="font-thin text-xs">PG-13 - Teens 13 or older</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        <h1 class="font-medium text-3xl mb-2">Sinopsis</h1>
+                        <p class="text-sm">After five years of harboring unspoken feelings, high-schooler Taiju Ooki is finally ready to
+                            confess his love to Yuzuriha Ogawa. Just when Taiju begins his confession however, a
+                            blinding green light strikes the Earth and petrifies mankind around the world—turning every
+                            single human into stone. </p>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
